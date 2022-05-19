@@ -21,6 +21,12 @@ public class HelloWorldTest {
     }
 
     @Test
+    public void testMinus(){
+        int minus = HelloWorld.minus(6, 2);
+        Assertions.assertEquals(5, minus);
+    }
+
+    @Test
     public void testError() throws Exception {
         Assertions.assertThrows(Exception.class, ()->{
             throw new Exception("Some error");
