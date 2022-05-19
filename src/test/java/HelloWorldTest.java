@@ -21,6 +21,18 @@ public class HelloWorldTest {
     }
 
     @Test
+    public void testMinus(){
+        int minus = HelloWorld.minus(6, 2);
+        Assertions.assertEquals(4, minus);
+    }
+
+    @Test
+    public void testMinus2(){
+        int sum = HelloWorld.minus(6,2);
+        Assertions.assertNotEquals(7, sum);
+    }
+
+    @Test
     public void testError() throws Exception {
         Assertions.assertThrows(Exception.class, ()->{
             throw new Exception("Some error");
