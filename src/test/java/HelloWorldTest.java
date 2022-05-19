@@ -33,6 +33,12 @@ public class HelloWorldTest {
     }
 
     @Test
+    public void testMulti(){
+        int sum = HelloWorld.multiplication(5, 2);
+        Assertions.assertEquals(10, sum);
+    }
+
+    @Test
     public void testError() throws Exception {
         Assertions.assertThrows(Exception.class, ()->{
             throw new Exception("Some error");
